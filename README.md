@@ -1,16 +1,96 @@
-# React + Vite
+# 🚀 Job Tracker SaaS Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack cloud-deployed Job Application Tracking System built with React, Node.js, Express, and MySQL.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+Frontend: https://job-tracker-frontend-weld.vercel.app  
+Backend API: https://job-tracker-backend-gf6p.onrender.com  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧠 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is a production-grade full-stack SaaS application that allows users to:
 
-## Expanding the ESLint configuration
+- Register and login securely (JWT authentication)
+- Add, edit, and delete job applications
+- Filter jobs by status
+- Search jobs by company name
+- Paginate results
+- Maintain user-specific job isolation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Each user can only access their own data.
+
+---
+
+## 🏗️ Tech Stack
+
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- Axios
+- React Router
+
+### Backend
+- Node.js
+- Express.js
+- JWT Authentication
+- Express Validator
+
+### Database
+- MySQL (Railway Cloud)
+- Relational schema with foreign keys
+
+### Deployment
+- Frontend: Vercel
+- Backend: Render
+- Database: Railway
+
+---
+
+## 🔐 Authentication Flow
+
+- Passwords are hashed using bcrypt
+- JWT token issued on login
+- Token stored in localStorage
+- Protected routes via middleware
+- CORS configured for production
+
+---
+
+## 📊 Features
+
+- Full CRUD operations
+- Server-side pagination
+- Dynamic filtering & search
+- Clean responsive UI
+- Animated interactive components
+- Production-ready cloud architecture
+
+---
+
+## ⚙️ Architecture Flow
+
+Frontend (Vercel)  
+⬇  
+Express API (Render)  
+⬇  
+MySQL Database (Railway)
+
+---
+
+## 🎯 Key Learning Outcomes
+
+- Full-stack architecture design
+- JWT-based stateless authentication
+- Production CORS configuration
+- React state management & lifecycle
+- RESTful API design
+- Cloud deployment & environment handling
+
+---
+
+## 👨‍💻 Author
+
+Lovepreet Singh  
+Computer Science Graduate
